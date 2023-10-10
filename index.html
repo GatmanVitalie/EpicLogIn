@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasa 10C</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('VOKbTh0.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            /* background-color: rgba(255, 255, 255, 0.5); */
+
+            /* backdrop-filter: blur(3px); */
+            /* padding: 20px;
+            border-radius: 8px; */
+            /* border-color: rgb(255, 255, 255); */
+            /* border: 4px solid rgb(240, 244, 250); */
+            /* box-shadow: 0 0 10px rgb(255, 255, 255); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: scale(1.45, 1.45);
+
+        }
+
+
+        label {
+            color: #fff;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input:hover {
+            transform: scale(1.05, 1.05);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+        label:focus {
+            outline: none;
+            
+            
+        }
+
+        label::after {
+            outline: none;
+        }
+
+
+
+        input {
+            outline: none;
+
+            color: #fff;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+
+            background: rgba(167, 177, 192, 0.171);
+            border-radius: 12px;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(1px);
+            -webkit-backdrop-filter: blur(1px);
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        input::after
+        {
+            outline: none;
+
+            color: #fff;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+
+            background: rgba(167, 177, 192, 0.787);
+            border-radius: 12px;
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(1px);
+            -webkit-backdrop-filter: blur(1px);
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+
+
+        button {
+
+            color: #fff;
+            padding: 10px;
+
+            cursor: pointer;
+
+            background: rgba(167, 177, 192, 0.171);
+            border-radius: 20px;
+            box-shadow: 0 0 7px rgba(201, 202, 211, 0.406);
+            backdrop-filter: blur(1px);
+            -webkit-backdrop-filter: blur(1px);
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        button:hover {
+            background: rgba(167, 177, 192, 0.407);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(201, 202, 211, 0.717);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        .titlu {
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .square {
+            z-index: -4;
+            width: 200px;
+
+            height: 200px;
+            position: absolute;
+            /* Poziționare absolută */
+            transform: scale(1.45, 1.45);
+
+            background: rgba(29, 28, 28, 0.122);
+            border-radius: 16px;
+            box-shadow: 0 0 30px rgba(212, 213, 224, 0.307);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+    </style>
+
+    <script>
+        function openSignUpPage() {
+            window.location.href = 'https://www.exemplu.com/signup';
+        }
+    </script>
+</head>
+
+<body>
+
+    <form action="procesare.php" method="post">
+        <div class="titlu">
+            <a>Introduceți datele:</a>
+        </div>
+
+
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div class="Butons">
+            <button type="button" onclick="openSignUpPage()">Log in</button>
+            <button type="button" onclick="openSignUpPage()">Sign Up</button>
+        </div>
+
+        <div class="square"></div>
+
+    </form>
+
+</body>
+
+</html>
