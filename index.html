@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('VOKbTh0.webp');
+            background-image: url('mikael-gustafsson-wallpaper-mikael-gustafsson.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -33,7 +33,16 @@
             flex-direction: column;
             align-items: center;
             transform: scale(1.45, 1.45);
+            font-weight: bold;
+            position: relative;
 
+
+
+        }
+
+        #myForm {
+            position: relative;
+            /* Asigurați-vă că myForm are poziționarea relativă */
         }
 
 
@@ -41,27 +50,12 @@
             color: #fff;
             display: block;
             margin-bottom: 8px;
+            margin-top: 5px;
+
         }
-
-        input:hover {
-            transform: scale(1.05, 1.05);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            outline: none;
-        }
-
-        label:focus {
-            outline: none;
-            
-            
-        }
-
-        label::after {
-            outline: none;
-        }
-
-
 
         input {
+
             outline: none;
 
             color: #fff;
@@ -76,10 +70,30 @@
             backdrop-filter: blur(1px);
             -webkit-backdrop-filter: blur(1px);
             border: 1px solid rgba(255, 255, 255, 1);
+
+            box-sizing: border-box;
+            width: 90%;
+
         }
 
-        input::after
-        {
+        input:hover {
+            transform: scale(1.05, 1.05);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
+
+        label:focus {
+            outline: none;
+
+
+        }
+
+        label::after {
+            outline: none;
+
+        }
+
+        input::after {
             outline: none;
 
             color: #fff;
@@ -94,11 +108,31 @@
             backdrop-filter: blur(1px);
             -webkit-backdrop-filter: blur(1px);
             border: 1px solid rgba(255, 255, 255, 1);
+
+
         }
 
 
+        .Butons {
+            /* display: flex; */
+            /* width: 100%; */
+            margin-top: -2px;
+            /* Ajustează spațiul de la marginea de sus a butoanelor */
+        }
+
+        .Butons button:nth-child(1) {
+            margin-right: 12px;
+        }
+
+        /* Aliniaza al doilea buton la stânga */
+        .Butons button:nth-child(2) {
+            margin-left: 3px;
+        }
+
 
         button {
+
+            margin-top: 3px;
 
             color: #fff;
             padding: 10px;
@@ -123,17 +157,25 @@
         }
 
         .titlu {
-            font-family: Arial, sans-serif;
+            font-family: Soin Sans Pro, Tahoma, Geneva, Verdana, sans-serif;
+
             color: #fff;
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 24px;
         }
 
         .square {
             z-index: -4;
             width: 200px;
 
-            height: 200px;
+            height: 220px;
             position: absolute;
+            top: 11px;
+            left: 13px;
+
             /* Poziționare absolută */
+
             transform: scale(1.45, 1.45);
 
             background: rgba(29, 28, 28, 0.122);
@@ -146,6 +188,8 @@
     </style>
 
     <script>
+
+
         function openSignUpPage() {
             window.location.href = 'https://www.youtube.com/@Vitalei_Gatman/videos';
         }
@@ -154,7 +198,10 @@
 
 <body>
 
-    <form action="procesare.php" method="post">
+    <form id="myForm" action="procesare.php" method="post">
+
+
+
         <div class="titlu">
             <a>Introduceți datele:</a>
         </div>
